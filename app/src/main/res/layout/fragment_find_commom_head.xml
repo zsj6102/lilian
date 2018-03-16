@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    >
+
+    <RelativeLayout
+        android:layout_marginBottom="6dp"
+        android:id="@+id/head_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <ImageView
+            android:id="@+id/find_iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_find" />
+
+        <!--
+             org.soshow.beautyedu.login.CircularImage   org.soshow.beautyedu.widget.CircleImageView  RoundImageView:borderColor="@color/bg_green"
+            RoundImageView:borderWidth="2dp"
+        -->
+
+        <org.soshow.beautyedu.login.CircularImage
+            android:id="@+id/fragment_find_iv_head"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+             android:layout_marginTop="148dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/head_account" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView1"-->
+            <!--android:layout_width="92dp"-->
+            <!--android:layout_height="92dp"-->
+            <!--android:layout_alignBottom="@+id/fragment_find_iv_head"-->
+            <!--android:layout_alignRight="@+id/fragment_find_iv_head"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:src="@drawable/img_top" />-->
+        <TextView
+            android:id="@+id/find_fragment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fragment_find_iv_head"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="dddddddddd"
+            />
+
+        <TextView
+            android:id="@+id/fragment_find_iv_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find_iv_bg"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/fragment_find_iv_head"
+            android:gravity="right"
+            android:text="心若向阳，何惧忧伤"
+            android:textColor="@color/text_main"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/find_detail_head_add_new_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_rl"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="16dp" >
+
+        <TextView
+            android:id="@+id/find_detail_item_head_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:text="今天"
+            android:textColor="@color/text_gray_deep"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/find_detail_item_head_iv_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/find_detail_item_head_tv_time"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/find_detail_item_head_tv_time"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_camera" />
+    </RelativeLayout>
+</RelativeLayout>
